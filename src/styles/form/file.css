@@ -1,0 +1,22 @@
+label.file input {
+  position: absolute;
+  left: -9999px;
+}
+
+label.file .file {
+  display: inline-block;
+  width: auto;
+  padding: 0 15px;
+  height: 35px;
+  font: 14px/35px sans-serif;
+  background: #16a085;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+
+  transition: 300ms background;
+}
+
+label.file .file:hover {
+  background: #1abc9c;
+}

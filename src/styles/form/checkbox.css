@@ -1,0 +1,62 @@
+.divv {
+  padding: 20px;
+}
+
+label.checkbox {
+}
+
+label.checkbox input {
+  position: absolute;
+  left: -9999px;
+}
+
+label.checkbox .text {
+  /* fonst-size line-heigh font-family */
+  font: 12px/14px sans-serif;
+  color: #666;
+  position: relative;
+  top: -3px;
+  padding-left: 10px;
+}
+
+label.checkbox .checkbox {
+  display: inline-block;
+  width: 36px;
+  height: 14px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.26);
+  position: relative;
+  cursor: pointer;
+}
+
+label.checkbox .checkbox span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+
+  left: 0; /* bu olmazsa animasyon olmaz */
+  background: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  top: -3px;
+
+  transition: 350ms all; /* all veya left */
+}
+
+label.checkbox input:checked + .checkbox {
+  background: #7e9dcd;
+}
+
+label.checkbox input:checked + .checkbox span {
+  background: #73a0e9;
+  left: auto;
+  left: 20px;
+}
+
+/* label içindeki checkbox ın içindeki input checked olduğunda
+  içeride checkbox ve text class'ları olan iki kardeş var,
+  ilk kardeşe git, ondan sonrakine ekle yazdık
+*/
+label.checkbox input:checked + .checkbox + .text {
+  color: #73a0e9;
+}

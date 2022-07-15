@@ -1,0 +1,22 @@
+main {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 50px;
+}
+
+main header {
+  height: 50px;
+  background: #666;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+main article {
+  height: calc(50vh - 6px);
+  border: 3px solid #333;
+  padding: 15px;
+  margin-bottom: 15px;
+  scroll-snap-align: start;
+}

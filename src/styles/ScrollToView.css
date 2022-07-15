@@ -1,0 +1,27 @@
+.scrollToView,
+.scrollToView li,
+.scrollToView a {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.scroll-navbar {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.scroll-navbar li {
+  min-width: 300px;
+  padding: 20px 0;
+  border: 1px solid rgb(58, 113, 113);
+
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.scroll-navbar li.active {
+  background-color: lime;
+}

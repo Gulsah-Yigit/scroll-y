@@ -1,0 +1,23 @@
+.button-position {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.button-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+
+  transition: transform 150ms ease-in-out;
+}
+
+.button-style:hover {
+  transform: scale(1.2);
+  background-color: #444;
+  color: #fff;
+}
